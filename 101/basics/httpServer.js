@@ -10,4 +10,4 @@ server.on('request', (request, response) => { // request object inherits from Re
 
 server.listen('3000', '127.0.0.1');
 
-console.log('listening to requests on port 3000!');
+console.log('listening to requests on port 3000 on localhost');
