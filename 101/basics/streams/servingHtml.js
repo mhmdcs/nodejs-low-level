@@ -8,7 +8,7 @@ server.on('request', (request, response) => {
     const filePath = path.join(__dirname, '/index.html');
     const readableStream = fs.createReadStream(filePath);
 
-    response.writeHead(200, { 'Content-Type': 'text/html' } );
+    response.writeHead(200, { 'Content-Type': 'text/html' }, 'utf8' );
     readableStream.pipe(response);
 });
 
